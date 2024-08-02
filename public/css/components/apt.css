@@ -1,0 +1,57 @@
+
+.apuntes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+}
+.apuntes-card{
+    padding:15px;
+    display:flex;
+    border: 1px solid;
+    border-radius: 8px;
+    width: 500px;
+    height: 150px;
+    margin:10px;
+}
+.line{
+    margin-left:10px;
+    margin-right:10px;
+    border-right: 1px dashed;
+}
+.datas{
+    width: 100%;
+}
+.title,.descripcion{
+    padding-bottom:10px;
+    padding-top: 5px;
+    border-bottom: 1px solid #5f5f63;
+}
+.title{
+    font-weight: bold;
+    font-size: 20px;
+}
+.fecha{
+    text-align: right;
+}
+.ops{
+    margin-top: 5px;
+}
+.ops button{
+    border:none;
+    background:#34aadc;
+    color: aliceblue;
+    padding:10px;
+    border-radius: 5px;
+    width: 100px;
+    font-weight:bold;
+    font-family:20px;
+}
+
+@media(max-width:768px){
+    .apuntes{
+        display: contents;
+    }
+    .apuntes-card{
+        width:325px;
+    }
+}

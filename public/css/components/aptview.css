@@ -1,0 +1,58 @@
+.content {
+    padding-left: 1.5em;
+    padding-top: 2em;
+    display: flex;
+    width: 1000px;
+    justify-content: space-between; /* Ensure content is spaced properly */
+}
+.mdia {
+    width: 75%;
+    padding-right: 15px;
+}
+.media {
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #474747;
+}
+.archive {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+.comments {
+    width: 25%; /* Adjust width to fit better within the container */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.comment {
+    display: flex;
+    margin: 10px 0; /* Adjusted for vertical spacing */
+}
+.comments .picture {
+    width: 45px;
+    height: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 1em;
+}
+.comments img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+.comm {
+    width: calc(100% - 55px); /* Adjust width to fit with the picture */
+}
+.comm input {
+    background: #474747;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 0px;
+}

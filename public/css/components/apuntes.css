@@ -1,0 +1,126 @@
+.main {
+    flex: 1;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.mini-container {
+    background: #27272a;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+    width: 900px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.box .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.options {
+    background: #3f3f46;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.red {
+    background: #ef4444;
+}
+
+
+/*table*/
+
+.table-wrapper {
+    color: red;
+    width: 100%;
+    margin: 20px 0;
+    overflow-x: auto;
+    background: #27272a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border-radius: 8px;
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+
+.responsive-table {
+
+    & th,td {
+        padding: 12px 15px;
+        border: 1px solid #27272a;
+        text-align: left;
+    }
+
+    & thead {
+        background: #27272a;
+    }
+
+    & th{
+        font-weight: bold;
+        background: #27272a;
+        color: white;
+        border-bottom: 2px solid #3f3f46;
+    }
+    & tr:nth-child(even){
+        background: #27272a;
+    }
+    & td{
+        border-bottom: 2px solid #3f3f46;
+    }
+}
+@media (max-width:600px){
+    .responsive-table{
+        & thead{
+            display: none;
+        }
+        & tr{
+            margin-bottom: 10px;
+            display: block;
+            border: 1px solid #ddd;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            background: #ddd;
+        }
+        & td{
+            display: block;
+            text-align: right;
+            font-size: 13px;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+            position: relative;
+            padding-left: 50%;
+        }
+        & td::before{
+            content: attr(data-label);
+            position: absolute;
+            left: 10px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+            font-weight: bold;
+            text-align: left;
+        }
+        & tr:nth-child(even){
+            background: transparent;
+        }
+    }
+}
